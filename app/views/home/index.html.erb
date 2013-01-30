@@ -25,20 +25,33 @@
 			<h4>CONTACT ME</h4>
 				</br>
 				<% if notice %>
-					<h5> <%= notice %> </h5>
+					<h6> <%= notice %> </h6>
 				<% else %>
 
-					<%= form_tag  do  %>
-						 <%= label_tag(:name, "Name:") %>
-						 <%= text_field_tag(:name, "", :class => "six") %>
-						 <%= label_tag(:email, "Email:") %>
-						 <%= text_field_tag(:email, "", :class => "seven") %>
-						 <%= label_tag(:message, "Message:")%>
-						 <%= text_area_tag(:message, "", rows: "13") %>
-						 <%= submit_tag("Submit", class: "medium button")%>
+					<%= form_for @contact_message do |f| %>
+						<%= f.label :name, "Name" %> 
+						<% if @contact_message.errors[:name].any? %>
+							<h6> Invalid Name </h6>
+						<% end %>
+						<%= f.text_field :name, class: "six", placeholder: "Bob the Builder" %>
+
+						<%= f.label :email, "Email" %>
+						<% if @contact_message.errors[:email].any? %>
+							<h6> Invalid Email </h6>
+						<% end %>
+						<%= f.text_field :email, class: "seven", placeholder: "Bob@builder.com" %>
+
+						<%= f.label :message, "Message" %>
+						<% if @contact_message.errors[:message].any? %>
+							<h6> Invalid message </h6>
+						<% end %>
+						<%= f.text_area :message, id: "message-area" %>
+
+						<%= f.submit 'Submit', class: "medium button" %>
 					<% end %>
 
 				<% end %>
+
 			</div>
 		</div>
 	</div>

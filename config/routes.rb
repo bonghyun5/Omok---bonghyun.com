@@ -1,4 +1,8 @@
 Bonghyun::Application.routes.draw do
+  resources :contact_messages, :only => [:create]
+
+  get "bkim515" => "contact_messages#index"
+
   get "home/index"
 
   get "home/projects"

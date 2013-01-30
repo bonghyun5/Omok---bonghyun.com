@@ -1,0 +1,23 @@
+<h1>Listing contact_messages</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Message</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @contact_messages.each do |contact_message| %>
+  <tr>
+    <td><%= contact_message.name %></td>
+    <td><%= contact_message.email %></td>
+    <td><%= contact_message.message %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
