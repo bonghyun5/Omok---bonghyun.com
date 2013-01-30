@@ -160,3 +160,77 @@ $index-main-color: black;
 	}
 }
 
+#omok-container
+{
+    background-color: #FFF8DC;
+	padding-bottom: 30px;
+}
+
+#brand
+{
+	color:white;
+	margin-left: 50px;
+	margin-right: 10px;
+}
+
+#board-holder
+{
+    text-align: center;
+}
+
+#board-place
+{
+    height: 620px;
+    width: 620px;
+    margin-top: 70px;
+    background-color: #8B7355;
+    display: inline-block;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#board-frame
+{
+    height: 590px;
+    width: 590px;
+    background-color:  #8B7E66 ;
+    margin-top: 10px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+#board
+{
+    height: 570px;
+    width: 570px;
+    background-color: #F5DEB3;
+    margin-left: 10px;
+    -moz-border-radius: 3px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border:  black 1px;
+}
+
+.neutral, .dark, .light
+{
+    height: 38px;
+    width: 38px;
+    border: solid #A39480 1px;
+    float: left;
+}
+
+.neutral
+{
+    background-color:  #F5DEB3;
+}
+
+.dark
+{
+    background-color:#8B7765;
+}
+
+.light
+{
+    background-color: #FFF5EE;
+}

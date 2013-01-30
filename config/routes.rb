@@ -6,6 +6,8 @@ Bonghyun::Application.routes.draw do
   get "home/about"
 
   get "home/contact"
+  
+  get "omok" => "home#omok"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
