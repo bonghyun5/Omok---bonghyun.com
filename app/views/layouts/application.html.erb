@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bonghyun</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class = "top-bar">
+	<div class = "attached">
+		<div class = "name">
+			<span>
+				<%= link_to "Bonghyun Kim", home_index_path %>
+			</span>
+		</div>
+	</div>	
+</div>
+	
+	
+<%= yield %>
+
+
+<div class = "footer">
+	<footer class = "row">
+		<div class = "twelve columns">
+			<p><b>© Bonghyun Kim</b></p>
+		</div>
+	</footer>
+</div>
+
+
+</body>
+</html>

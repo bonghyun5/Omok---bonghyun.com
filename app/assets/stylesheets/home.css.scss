@@ -1,0 +1,162 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$index-main-color: black;
+
+.top-bar {
+	margin: 0;
+
+	border-bottom: solid 5px $index-main-color;
+	
+	.attached {
+		padding: 0 15px;
+		width: 1000px;
+		max-width: 100%;
+		z-index: 0 !important;
+		margin: 0 auto;
+		position: relative;
+		width: 980px;
+		
+		ul li a {
+			color: $index-main-color;
+			&:hover {background-color: $index-main-color; color: white;}
+		}
+		
+		.name {
+			
+			text-align: center;
+			
+			a {
+				font-weight: 600;
+				font-size: 26px;
+				font-family: Andale Mono;
+				letter-spacing: -2px;
+				color: $index-main-color;
+				
+				&:hover {background: none; }
+			 
+			}
+		}
+	}
+}
+
+
+.top-header {
+
+	text-align: center;
+	
+	.free-container {
+		
+		.free {
+		
+			a {
+			
+				color: white;
+			
+			}
+			
+			font-family: "Proxima Nova Bold",Arial,sans-serif;
+			font-size: 25px;
+			line-height: 25px;
+			color: white;
+			padding: 15px 33px 16px 33px;
+			background-color: $index-main-color;
+			display: inline-block;
+			font-weight: 600;
+			margin-top: -4px;
+			-webkit-border-bottom-right-radius: 15px;
+			-webkit-border-bottom-left-radius: 15px;
+			-moz-border-radius-bottomright: 15px;
+			-moz-border-radius-bottomleft: 15px;
+			border-bottom-right-radius: 15px;
+			border-bottom-left-radius: 15px;
+		}
+	}
+	
+}
+
+.banner
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	i {
+		font-size: 70px;
+		margin: 0 5px;
+		color: $index-main-color;
+	}
+
+}
+
+.content
+{
+	label {
+		color:  #344152;
+	}
+	h4 {
+		font-weight: 300;
+		margin-bottom: 0;
+		color: #344152;
+		border-bottom: solid 1px  #344152;
+	}
+	
+	#pic-me{
+		height: 230px;
+		width: 220px;
+		background-color: white;
+		float:left;
+		margin: 0 20px 0 0;
+		box-shadow: 2px 2px 10px grey;
+	}
+	
+	p {
+		font-size: 17px;
+		font-weight: 300;
+		margin: 0;
+	}
+
+	#button-container {
+	}
+	
+	#project-pic {
+		width: 200px;
+		height: 180px;
+		background-color: grey;
+		margin: 0;
+		box-shadow: 2px 2px 10px grey;
+	}
+	
+	.project {
+		margin-bottom: 20px;
+		p {
+			float: left;
+			b {
+				float:left;
+			}
+		}
+		i {
+			font-size: 14px;
+			color: #344152;
+		}
+	}
+	
+	.ll {
+		margin-left: -10px;
+	}
+
+
+}
+
+
+.footer {
+	text-align: center;
+	background-color: black;
+	
+	p {
+		margin: 0;
+		color: white;
+		padding: 10px 0;
+		height: 100%;
+	}
+}
+

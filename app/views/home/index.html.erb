@@ -1,0 +1,106 @@
+<header class = "top-header">
+	<div class = "row free-container">
+		<div class = "twelve columns" >
+			<div class = "free"><a href ="http://www.w3schools.com">RESUME</a></div>
+		</div>
+	</div>
+	
+	<div class = "row banner">
+		<div class = "twelve columns">
+			<a href = "http://www.facebook.com/bonghyun"><i class="social foundicon-facebook"></i></a>
+			<a href = "https://github.com/bonghyun5"><i class="social foundicon-github"></i></a>
+			<a href = "http://www.linkedin.com/pub/bonghyun-kim/26/69b/779/"><i class="social foundicon-linkedin"></i></a>
+		</div>
+	</div>
+</header>
+
+<div class = "row content">
+	<div class = "six columns">
+		<h4>ABOUT ME</h4></br>
+		<img src="/assets/me.jpg" id = "pic-me"/>
+		<p>Hello. This is where I will be putting up some of the projects I've been working on. </br>I am a current Junior at UC Berkeley studying Computer Science and Statistics.</br>Some of my interests are building websites [I think they're pretty fun], machine learning [Just starting to learn. They seem pretty cool so far], and entrepreneurship. </br>If you have any questions, just leave a comment below!</p>
+		</br>
+		<div class = "row">
+			<div class = "twelve columns">
+			<h4>CONTACT ME</h4>
+				</br>
+				<% if notice %>
+					<h5> <%= notice %> </h5>
+				<% else %>
+
+					<%= form_tag  do  %>
+						 <%= label_tag(:name, "Name:") %>
+						 <%= text_field_tag(:name, "", :class => "six") %>
+						 <%= label_tag(:email, "Email:") %>
+						 <%= text_field_tag(:email, "", :class => "seven") %>
+						 <%= label_tag(:message, "Message:")%>
+						 <%= text_area_tag(:message, "", rows: "13") %>
+						 <%= submit_tag("Submit", class: "medium button")%>
+					<% end %>
+
+				<% end %>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class = "six columns">
+		<h4>PROJECTS</h4></br>
+		
+		<div class = "row project">
+			<div class = "five columns">
+				<img src = "/assets/shiffft.jpg" id = "project-pic">
+			</div>
+			<div class = "seven columns">
+				<p class = "ll"><b>SHIFFFT</b></br>
+				Web Application to easily and automatically assign event shifts for members of your organization.</br>
+				<i>Ruby on Rails. AJAX. Jquery. Coffeescript</i></br>
+				<a href= "http://www.shiffft.com"><u>www.shiffft.com</u></a>
+				</p>
+			</div>
+		</div>
+		
+		<div class = "row project">
+			<div class = "seven columns">
+				<p><b>Tau Omega Pi</b></br>
+				Website for my Entrepreneurship Fraternity. Complete with Reddit-like forum, test bank, and login system. </br>
+				<i>Ruby on Rails. Jquery. HTML5. SCSS.</i> </br>
+				<a href = "http://www.berkeleytop.com"><u>www.berkeleytop.com</u></a>
+				</p>
+			</div>
+			<div class = "five columns">
+				<img src = "/assets/berkeleytop.jpg" id = "project-pic">
+			</div>
+		</div>
+		
+		<div class = "row project">
+			<div class = "five columns">
+				<img src = "/assets/omok.jpg" id = "project-pic">
+			</div>
+			<div class = "seven columns">
+				<p class = "ll"><b>Omok</b></br>
+				Traditional Korean board game with an AI that uses Alpha Beta Pruning algorithm to look at moves 3 turns ahead. </br>
+				<i>HTML5. Jquery</i></br>
+				<a href = "http://www.bonghyunkim.com/omok"><u>Omok</u></a>
+				</p>
+			</div>
+		</div>
+		
+		<div class = "row project">
+			<div class = "seven columns">
+				<p><b>ChartIt</b></br>
+				HTML5's Canvas and Javascript based framework for making elegant bar graphs.</br>
+				<i>HTML5 Canvas. Jquery</i></br>
+				<a href = "https://github.com/bonghyun5/Chart-It"><u>ChartIt</u></a>
+				</p>
+			</div>
+			<div class = "five columns">
+				<img src = "/assets/poll.jpg" id = "project-pic">
+			</div>
+		</div>
+		
+		<p> More coming soon... </p>
+		</br></br>
+	</div>
+	
+</div>
